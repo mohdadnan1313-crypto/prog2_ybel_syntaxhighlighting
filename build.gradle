@@ -50,7 +50,7 @@ sourceSets {
 
 tasks.named('generateGrammarSource') {
     maxHeapSize = '64m'
-    arguments.addAll(['-visitor', '-listener', '-long-messages'])
+    arguments.addAll(['-visitor', '-long-messages'])
     outputDirectory = antlrGenDir.get().asFile
 }
 
