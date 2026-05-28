@@ -12,15 +12,11 @@ public class Main {
     // Phase I: RegexHighlighter
     SyntaxHighlighter regex = new RegexHighlighter();
 
-    // Phase II: ScanningHighlighter
-    SyntaxHighlighter scanning = new ScanningHighlighter();
-
-    // Phase III: AntlrTokenCollector (tokenbasiert)
-    SyntaxHighlighter antlrToken = new AntlrTokenCollector();
+    // Phase II: ScanningHighlighter (not yet implemented)
+    // SyntaxHighlighter scanning = new ScanningHighlighter();
 
     // and go ...
     EditorUI.show(Texts.START_TEXT, regex);
-    EditorUI.show(Texts.START_TEXT, scanning);
-    // EditorUI.show(Texts.START_TEXT, antlrToken);
+    // EditorUI.show(Texts.START_TEXT, scanning);
   }
 }
