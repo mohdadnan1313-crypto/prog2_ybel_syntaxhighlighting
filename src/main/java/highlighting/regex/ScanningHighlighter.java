@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 
+/**
+ * Ein Syntax-Highlighter, der den Text sequenziell von links nach rechts durchsucht.
+ * An jeder Position prüft er alle verfügbaren Token und wählt das Token mit der längsten 
+ * Übereinstimmung aus, um zu verhindern, dass Schlüsselwörter innerhalb anderer Wörter 
+ * fehlerhaft hervorgehoben werden.
+ */
 public class ScanningHighlighter extends SyntaxHighlighter {
 
   @Override
